@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="outer">
+        <div id="inner1">
+            <div id="text1">
+                <p id="text1_1">Welcome to</p>
+                <p id="text1_2">PASSWORD GENERATOR</p>
+                <p id="text1_3">Made by Imon Mallik</p>
+            </div>
+        </div>
+        <div id="inner2">
+            <div id="box">
+                <div id="headingbox">
+                    <p id="headingboxtext">Generate Your Password</p>
+                </div>
+                <div id="outputbox">
+                    <input type="text" id="outputbox_1" placeholder="Your Password" disabled>
+                    <div id="copyicon">
+                        <i class="fa-regular fa-copy"></i>
+                    </div>
+                </div>
+                <div id="input1">
+                    <p id="inputdisplaytext1_1">Password Length</p>
+                    <input id="input1_1" type="number" placeholder="Enter size" min="1" max="30">
+                </div>
+                <div id="input2">
+                    <label for="capitalletters" id="inputtext2_1">Include capital letters(A-Z):</label>
+                    <input type="checkbox" id="capitalletters" name="capitalletters">
+                </div>
+                <div id="input3">
+                    <label for="smallletters" id="inputtext3_1">Include small letters(a-z):</label>
+                    <input type="checkbox" id="smallletters" name="smallletters">
+                </div>
+                <div id="input4">
+                    <label for="specialcharacters" id="inputtext4_1">Include special characters:</label>
+                    <input type="checkbox" id="specialcharacters" name="specialcharacters">
+                </div>
+                <div id="input5">
+                    <label for="digits" id="inputtext5_1">Include digits(0-9):</label>
+                    <input type="checkbox" id="digits" name="digits">
+                </div>
+                <button type="button" id="generatebutton">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footertext">
+            For source code visit <a href="https://github.com/CyberPokemon" id="footerlink">My Github Page</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
